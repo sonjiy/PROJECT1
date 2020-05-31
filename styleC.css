@@ -1,0 +1,85 @@
+body {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 40px;
+	overflow: hidden;
+}
+.box1 {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	top: 10;
+	left: 10;
+	position: relative;
+ animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+.box2 {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	bottom: 10;
+	right: 10;
+}
+.space {
+	width: 10px;
+	height: 10px;
+	background-color: white;
+}
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px; left: 450px; }
+}
+.A {
+	width: 90px;
+	height: 150px;
+	border-left: 10px dotted #D0D0FF;
+	padding-left: 10px;
+	text-align: left;
+	background-color: #eeeff2;
+}
+.A:hover {
+	background-image: linear-gradient(to bottom right, #ff99cc, #9966ff);
+	border-left: 10px none;
+	cursor: pointer;
+	width: 180px;
+	height: 300px;
+	transition: width 4s, height 4s;
+	font-style: oblique;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+.B {
+	width: 90px;
+	height: 150px;
+	border-left: 10px dotted #D0D0FF;
+	padding-left: 10px;
+	text-align: left;
+	background-color: #eeeff2;
+}
+.B:hover {
+	background-image: linear-gradient(to bottom right, #ff99cc, #ccccff);
+	cursor: pointer;
+	width: 180px;
+	height: 300px;
+	transition: width 4s, height 4s;
+	font-style: oblique;
+	color: white;
+	text-shadow: 2px 2px 4px #0000FF;
+	
+}
+.F {
+	width: 90px;
+	height: 150px;
+	border-left: 10px dotted #D0D0FF;
+	padding-left: 10px;
+	text-align: left;
+	background-color: #eeeff2;
+}
+.F:hover{
+
+	background-color:#00ffcc;
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
